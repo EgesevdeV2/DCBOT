@@ -16,14 +16,9 @@ module.exports = function (client) {
       //If not in a guild return
       if(!member.guild) return;
       //create a new Canvas
-      const canvas = Canvas.createCanvas(1772, 633);
+      const canvas = Canvas.createCanvas(992, 614);
       //make it "2D"
       const ctx = canvas.getContext('2d');
-      //set the Background to the welcome.png
-      const background = await Canvas.loadImage(`./welcome.png`);
-      ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-      ctx.strokeStyle = '#f2f2f2';
-      ctx.strokeRect(0, 0, canvas.width, canvas.height);
       //set the first text string 
       var textString3 = `${member.user.username}`;
       //if the text is too big then smaller the text
